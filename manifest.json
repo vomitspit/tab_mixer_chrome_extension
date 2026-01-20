@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "tab mixer",
+  "description": "turns your tabs into a mixing desk, with hot-keys. volume adjustments for youtube videos, and mute buttons for all other tabs and media elements",
+  "version": "1.0",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["*://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/tabmixer16.png",
+    "32": "icons/tabmixer32.png",
+    "48": "icons/tabmixer48.png",
+    "128": "icons/tabmixer128.png"
+  },
+  "action": {
+    "default_title": "tab mixer",
+    "default_icon": {
+      "16": "icons/tabmixer16.png",
+      "32": "icons/tabmixer32.png"
+    }
+  }
+}
