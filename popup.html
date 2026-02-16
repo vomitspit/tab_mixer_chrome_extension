@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Tab Mixer</title>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: #000;
+  color: #fff;
+  width: 250px;
+}
+
+h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 6px;
+}
+
+button {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+button.staged {
+  background: #0a0;
+  border-color: #0a0;
+}
+
+button.staged:hover {
+  background: #0f0;
+  color: #000;
+  border-color: #0f0;
+}
+
+#status {
+  font-size: 10px;
+  color: #999;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #333;
+}
+</style>
+</head>
+
+<body>
+  <h3>TAB MIXER</h3>
+  
+  <button id="stage-btn">STAGE THIS TAB</button>
+  <button id="mixer-btn">OPEN TAB MIXER</button>
+  
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

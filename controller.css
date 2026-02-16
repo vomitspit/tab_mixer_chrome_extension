@@ -34,6 +34,11 @@ body {
   gap: 6px;
 }
 
+.channel.recording {
+  border-color: #ff0000;
+  box-shadow: 0 0 10px #ff0000;
+}
+
 .channel.flash {
   background: #666;
 }
@@ -98,4 +103,40 @@ input[type="range"]::-webkit-slider-thumb {
   height: 6px;
   background: #fff;
   cursor: pointer;
+}
+
+#record-controls {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+#record-btn {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#record-btn.recording {
+  background: #ff0000;
+  color: #fff;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+#record-status {
+  font-size: 11px;
+  color: #999;
 }
